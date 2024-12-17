@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ตัวอย่างหน้าเว็บพื้นฐานที่มีโครงสร้างที่จำเป็น">
+    <meta name="author" content="Your Name">
+    <title>โครงสร้างหน้าเว็บพื้นฐาน</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+</head>
+<body>
+    <!-- ส่วน Header -->
+    <header>
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับ</a></li>
+                <li><a href="#services">บริการ</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ส่วน Main Content -->
+    <main>
+        <!-- Section 1: หน้าแรก -->
+        <section id="home">
+            <h2>หน้าแรก</h2>
+            <p>นี่คือข้อความต้อนรับเข้าสู่เว็บไซต์ของเรา!</p>
+        </section>
+
+        <!-- Section 2: เกี่ยวกับ -->
+        <section id="about">
+            <h2>เกี่ยวกับเรา</h2>
+            <p>ข้อมูลเกี่ยวกับบริษัทหรือบริการของคุณ</p>
+        </section>
+
+        <!-- Section 3: บริการ -->
+        <section id="services">
+            <h2>บริการของเรา</h2>
+            <ul>
+                <li>บริการที่ 1</li>
+                <li>บริการที่ 2</li>
+                <li>บริการที่ 3</li>
+            </ul>
+        </section>
+
+        <!-- Section 4: ติดต่อเรา -->
+        <section id="contact">
+            <h2>ติดต่อเรา</h2>
+            <form action="#" method="post">
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">ส่งข้อความ</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ส่วน Footer -->
+    <footer>
+        <p>&copy; 2024 เว็บไซต์ของคุณ. สงวนลิขสิทธิ์.</p>
+        <ul>
+            <li><a href="#privacy">นโยบายความเป็นส่วนตัว</a></li>
+            <li><a href="#terms">เงื่อนไขการใช้งาน</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

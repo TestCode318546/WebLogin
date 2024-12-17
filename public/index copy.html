@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background with Transparency</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        section {
+            position: relative;
+            height: 100vh; /* ให้ section เต็มหน้าจอ */
+            overflow: hidden;
+        }
+
+        /* กำหนดสไตล์ให้ video อยู่เบื้องหลัง */
+        section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ปรับวิดีโอให้พอดีกับพื้นที่ */
+            z-index: -1; /* ซ่อนอยู่หลังเนื้อหา */
+        }
+
+        /* สไตล์สำหรับเลเยอร์โปร่งแสง */
+        section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9); /* สีดำและโปร่งแสง 50% */
+            z-index: 0; /* อยู่ด้านหลังเนื้อหา */
+        }
+
+        /* สไตล์สำหรับข้อความใน section */
+        section .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <!-- วิดีโอพื้นหลัง -->
+        <video autoplay muted loop>
+            <source src="image/183279-870457579_tiny.mp4" type="video/mp4">
+            <source src="background-video.webm" type="video/webm">
+            <!-- ข้อความแสดงเมื่อเบราว์เซอร์ไม่รองรับวิดีโอ -->
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- เนื้อหาที่แสดงบนวิดีโอ -->
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+            <p>Beautiful video background with transparency effect</p>
+        </div>
+    </section>
+</body>
+</html>

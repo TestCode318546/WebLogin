@@ -1,23 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="การแข่งขันเกมคณิตศาสตร์ เกม24 180iq โจทย์คณิต">
+  <meta name="author" content="Zano Skeleton">
+  <title>ZanoSkeleton</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
-<body>
-  <h1>Login</h1>
-  <form action="/auth/login" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
-    
-    <button type="submit">Login</button>
-  </form>
 
-  <h2>Don't have an account? <a href="/register.html">Register here</a></h2>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <a href="">
+          <img src="./image/logo.png" alt="logo of web" style="width: 100px;">
+          Zano Skeleton
+        </a>
+      </div>
+      <div class="menu-icon">&#9776;</div>
+    </div>
+    <div class="header-right">
+      <nav class="nav-menu">
+        <ul>
+          <li><a data-th="เกม24" data-en="Game24" href="#"></a></li>
+          <li><a data-th="เกม180iq" data-en="Game180iq" href="#"></a></li>
+          <li><a data-th="เกมถังน้ำ" data-en="Water Bucket Game" href="#"></a></li>
+          <ul class="language-switcher-mobile"><a class="language-switcher-mobile-text" href="#" data-th="ภาษา"
+              data-en="Language"></a>
+            <li class="language-switcher-mobile-en"><a data-th="อังกฤษ" data-en="English" href="#"></a></li>
+            <li class="language-switcher-mobile-th"><a data-th="ไทย" data-en="Thai" href="#"></a></li>
+          </ul>
+          <li class="login-mobile"><a data-th="เข้าสู่ระบบ" data-en="Login" href="#"></a></li>
+        </ul>
+      </nav>
+      <div class="language-switcher">
+        <label class="language-switcher-switch">
+          <input type="checkbox">
+          <span class="language-switcher-slider"></span>
+        </label>
+      </div>
+      <div class="login">
+        <button class="button btLogin"><a data-th="เข้าสู่ระบบ" data-en="Login"></a></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section1">
+      <video autoplay muted loop class="section1-background">
+        <source src="./image/183279-870457579_tiny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="section1-div">
+        <h1 data-th="สนุกกับเกมคณิตศาสตร์สุดท้าทาย!" data-en="Have fun with challenging math games!"></h1>
+        <p data-th="ทดสอบความสามารถด้านคณิตศาสตร์ของคุณกับเกมต่างๆ เช่น เกม 24 และ 180IQ ที่ออกแบบมาเพื่อฝึกฝนทักษะการคำนวณและเสริมสร้างไหวพริบ 
+        ปรับความยากตามระดับความสามารถและสนุกไปกับเกม!" data-en="Test your math skills with games like 24 and 180IQ, designed to sharpen your 
+          calculation skills and sharpen your wits. Adjust the difficulty to suit your skill level and have fun!">
+        </p>
+        <button class="button btStart"><a data-th="เริ่ม" data-en="Start"></a></button>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="section2-match">
+        <h1 data-th="จับคู่" data-en="Match"></h1>
+      </div>
+      <div class="section2-lists">
+        <!-- <div class="section2-lists-list" style="border: 1px solid #fff;">
+          create in js
+        </div> -->
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
